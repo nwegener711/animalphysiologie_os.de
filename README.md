@@ -1,5 +1,5 @@
 # animalphysiologie.github.io
-# The Yun Lab — Website (GitHub Pages)
+# Animalphysiologie — Website (GitHub Pages)
 
 Static, responsive lab website with sections for Research, Publications, People, News, Openings, and Contact.
 
