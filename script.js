@@ -90,3 +90,13 @@ async function loadPublications() {
 
 [pubSearch, pubYear, pubType].forEach(el => el && el.addEventListener('input', renderPublications));
 loadPublications();
+
+const header = document.querySelector('.site-header.transparent');
+if (header) {
+  const setHeader = () => {
+    if (window.scrollY > 10) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  };
+  setHeader();
+  window.addEventListener('scroll', setHeader);
+}
