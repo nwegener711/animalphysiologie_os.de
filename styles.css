@@ -95,15 +95,15 @@ input:focus,textarea:focus{outline:2px solid var(--primary);border-color:transpa
   .contact-grid{grid-template-columns:1fr}
   .people .pi{grid-template-columns:80px 1fr}
 }
-/* Großes Hero-Hintergrundbild */
+/* Großes Hintergrundbild im Hero */
 .hero {
   position: relative;
-  min-height: 80vh;            /* Höhe des Bereichs */
-  padding: 120px 0 80px;       /* Platz für Text oben/unten */
-  background: url("assets/hero-bg.jpg") center/cover no-repeat;
+  min-height: 80vh;              /* Höhe des Bereichs */
+  padding: 120px 0 80px;         /* Platz für Text oben/unten */
+  background: url("assets/hintergrund.png") center/cover no-repeat;
 }
 
-/* Dunkles Overlay für bessere Lesbarkeit des Textes */
+/* Overlay für bessere Lesbarkeit */
 .hero::before {
   content: "";
   position: absolute;
@@ -111,24 +111,24 @@ input:focus,textarea:focus{outline:2px solid var(--primary);border-color:transpa
   background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55));
 }
 
-/* Text über dem Overlay platzieren */
+/* Inhalt über dem Overlay */
 .hero-inner {
   position: relative;
   z-index: 1;
-  /* Wenn du nur Text im Hero willst, 1 Spalte:
-  grid-template-columns: 1fr;
-  */
 }
 
-/* Textfarbe im Hero auf hell stellen */
+/* Text im Hero auf hell stellen */
 .hero h1 { color: #fff; }
 .hero .sub { color: rgba(255,255,255,.9); }
 
-/* Buttons auf dem Bild besser sichtbar machen */
-.hero .btn.ghost { color: #fff; border-color: rgba(255,255,255,.5); }
+/* Buttons im Hero an das dunkle Overlay anpassen */
+.hero .btn.ghost { color: #fff; border-color: rgba(255,255,255,.6); }
 .hero .btn.ghost:hover { border-color: #fff; }
 
+/* Falls rechts noch ein Bild steht, ausblenden */
+.hero-media { display: none; }
+
 @media (min-width: 900px) {
-  /* Optional leichter Parallax-Effekt (Mobilgeräte ignorieren das teils) */
+  /* Optional: leichter Parallax-Effekt */
   .hero { background-attachment: fixed; }
 }
