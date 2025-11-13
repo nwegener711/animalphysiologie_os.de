@@ -190,3 +190,13 @@ input, textarea{
 }
 
 /* Karten/Buttons passen sich durch Variablen bereits an */
+
+/* Hellere Links auf dunklem Hintergrund */
+a { color: #cfe0ff; text-decoration-color: rgba(207,224,255,.5); }
+a:hover, a:focus { color: #ffffff; text-decoration-color: #ffffff; }
+a:visited { color: #cfe0ff; } /* verhindert lila */
+a:active { color: #ffffff; }
+
+/* Navi/Footer ggf. explizit */
+.nav a, .footer-links a { color: #cfe0ff; }
+.nav a:hover, .footer-links a:hover { color: #fff; }
