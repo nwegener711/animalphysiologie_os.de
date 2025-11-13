@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Title of Paper 1",
+    "authors": "A. Author, B. Author, C. Author",
+    "venue": "Journal Name",
+    "year": 2025,
+    "type": "Journal",
+    "url": "https://doi.org/xxxx",
+    "extra": "Open Access"
+  },
+  {
+    "title": "Conference Paper 2",
+    "authors": "D. Author, E. Author",
+    "venue": "Conference XYZ",
+    "year": 2024,
+    "type": "Conference",
+    "url": "https://arxiv.org/abs/xxxx"
+  },
+  {
+    "title": "Preprint 3",
+    "authors": "F. Author, G. Author",
+    "venue": "arXiv",
+    "year": 2023,
+    "type": "Preprint",
+    "url": "https://arxiv.org/abs/yyyy"
+  }
+]
