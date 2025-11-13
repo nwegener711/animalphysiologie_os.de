@@ -132,3 +132,8 @@ input:focus,textarea:focus{outline:2px solid var(--primary);border-color:transpa
   /* Optional: leichter Parallax-Effekt */
   .hero { background-attachment: fixed; }
 }
+
+/* Überschriften auf Times stellen */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, Georgia, serif !important;
+}
