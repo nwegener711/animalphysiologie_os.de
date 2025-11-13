@@ -156,3 +156,37 @@ h3 {
 .hero h1 {
   font-size: clamp(3rem, 6vw, 4.8rem);
 }
+
+/* Dark Theme – Variablen überschreiben */
+:root{
+  --bg:#0f1221;
+  --bg-alt:#141833;
+  --text:#e8ebf7;
+  --muted:#b9bed3;
+  --primary:#6c8cff;
+  --primary-600:#5a75d6;
+  --card:#1a1f3f;
+  --border:#2a2f56;
+}
+
+/* Header/Mobilmenü auf dunkel */
+.site-header{
+  background:rgba(10,13,26,0.6);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border);
+}
+.nav-toggle .bar{ background: var(--text); }
+
+/* Mobiles Dropdown-Menü dunkel (wichtig, überschreibt #fff) */
+@media (max-width: 720px){
+  .nav{ background: rgba(10,13,26,0.98); border-bottom:1px solid var(--border); }
+}
+
+/* Inputs/Formulare dunkel */
+input, textarea{
+  background:#0f1230;
+  color:var(--text);
+  border:1px solid var(--border);
+}
+
+/* Karten/Buttons passen sich durch Variablen bereits an */
