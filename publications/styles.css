@@ -222,26 +222,3 @@ a:active { color: #ffffff; }
   display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
 }
 .image-banner h2{ color:#fff; margin:0; }
-
-/* Publications-Hero mittig zentrieren */
-.hero.hero-center {
-  min-height: 70vh;          /* Höhe des Hero-Bereichs */
-  padding: 0;                 /* kein zusätzlicher Innenabstand */
-}
-.hero.hero-center .hero-inner {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;        /* vertikal zentriert */
-  justify-content: center;    /* horizontal zentriert */
-  text-align: center;         /* Text zentriert */
-}
-.hero.hero-center .hero-text {
-  max-width: 900px;
-}
-
-/* Sicherstellen, dass Text auf dem Bild gut lesbar ist */
-.hero h1 { color: #fff; }
-.hero .sub { color: rgba(255,255,255,.9); }
-
-/* Falls irgendwo noch ein Bild-Grid im Hero aktiv wäre, hier ausblenden */
-.hero-media { display: none; }
