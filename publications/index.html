@@ -3,213 +3,70 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Animalphysiologie | Bartscherer lab | Osnabrueck</title>
-  <meta name="description" content="Animalphysiologie — Research, Publications, People, News." />
-  <meta property="og:title" content="Animalphysiologie" />
-  <meta property="og:description" content="Research group website." />
+  <title>Publications — Animalphysiologie | Bartscherer lab | Osnabrueck</title>
+  <meta name="description" content="Publications of the Animalphysiologie group." />
+  <meta property="og:title" content="Publications — Animalphysiologie" />
+  <meta property="og:description" content="List of publications." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-image.jpg" />
-  <link rel="icon" href="assets/favicon.ico" />
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Optional: Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/…Inter…" rel="stylesheet">
+  <meta property="og:image" content="../assets/og-image.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo.png">
+  <link rel="icon" href="../assets/logo.png" sizes="any">
+  <link rel="stylesheet" href="../styles.css" />
 </head>
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png"> 
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png"> 
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
-  <link rel="icon" href="assets/logo.png" sizes="any">
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo">Animalphysiologie</a>
+      <a href="https://nwegener711.github.io/animalphysiologie_os.de/" class="logo">Animalphysiologie</a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav class="nav" role="navigation">
         <ul>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#people">People</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#openings">Openings</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/#research">Research</a></li>
+          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/publications/">Publications</a></li>
+          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/#people">People</a></li>
+          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/#news">News</a></li>
+          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/#openings">Openings</a></li>
+          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Animalphysiologie</h1>
-          <p class="sub">Short mission statement about your research focus. Two concise lines explaining the core areas and impact.</p>
-          <div class="cta-row">
-            <a class="btn ghost" href="#publications">View publications</a>
-            <a class="btn ghost" href="#openings">Join us</a>
-          </div>
-        </div>
-        <div class="hero-media">
-          <img src="assets/TP_Homepage_Banner.png" alt="Lab hero image" />
-        </div>
+  <main class="section">
+    <div class="container">
+      <h1>Publications</h1>
+
+      <div class="pub-controls">
+        <input id="pub-search" type="search" placeholder="Search title, authors, venue..." />
+        <select id="pub-year">
+          <option value="">All years</option>
+        </select>
+        <select id="pub-type">
+          <option value="">All types</option>
+          <option>Journal</option>
+          <option>Conference</option>
+          <option>Preprint</option>
+        </select>
       </div>
-    </section>
 
-    <section id="research" class="section">
-      <div class="container">
-        <h2>Research</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Area 1</h3>
-            <p>Short description of research area 1. Key methods, goals, and applications.</p>
-          </div>
-          <div class="card">
-            <h3>Area 2</h3>
-            <p>Short description of research area 2. Key methods, goals, and applications.</p>
-          </div>
-          <div class="card">
-            <h3>Area 3</h3>
-            <p>Short description of research area 3. Key methods, goals, and applications.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bildbanner zwischen Research und Publications -->
-<section class="image-banner" aria-label="Zwischenbild"></section>
-
-<!-- danach kommt wie gehabt -->
-<section id="publications" class="section alt">
-  ...
-</section>
-
-    
-    <section id="publications" class="section alt">
-      <div class="container">
-        <h2>Publications</h2>
-        <div class="pub-controls">
-          <input id="pub-search" type="search" placeholder="Search title, authors, venue..." />
-          <select id="pub-year">
-            <option value="">All years</option>
-          </select>
-          <select id="pub-type">
-            <option value="">All types</option>
-            <option>Journal</option>
-            <option>Conference</option>
-            <option>Preprint</option>
-          </select>
-        </div>
-        <ol id="pub-list" class="pub-list"></ol>
-        <p id="pub-empty" class="muted" hidden>No publications found.</p>
-      </div>
-    </section>
-
-    <section id="people" class="section">
-      <div class="container">
-        <h2>People</h2>
-        <div class="people">
-          <div class="pi">
-            <img src="assets/kerstin_normal.webp" alt="webp Photo" />
-            <div>
-              <h3>Prof. Firstname Lastname</h3>
-              <p class="muted">Principal Investigator</p>
-              <p>Short bio. Interests, background, affiliations.</p>
-              <div class="links">
-                <a href="#" aria-label="Google Scholar">Scholar</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="Twitter">Twitter/X</a>
-              </div>
-            </div>
-          </div>
-          <h3>Team</h3>
-          <div class="grid-3">
-            <div class="card person">
-              <img src="assets/person1.jpg" alt="Member 1" />
-              <h4>Member 1</h4>
-              <p class="muted">Role / Degree</p>
-            </div>
-            <div class="card person">
-              <img src="assets/person2.jpg" alt="Member 2" />
-              <h4>Member 2</h4>
-              <p class="muted">Role / Degree</p>
-            </div>
-            <div class="card person">
-              <img src="assets/person3.jpg" alt="Member 3" />
-              <h4>Member 3</h4>
-              <p class="muted">Role / Degree</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="news" class="section alt">
-      <div class="container">
-        <h2>News</h2>
-        <ul class="news-list">
-          <li>
-            <span class="date">2025-05-01</span>
-            <span class="text">We received funding for project XYZ.</span>
-          </li>
-          <li>
-            <span class="date">2025-03-14</span>
-            <span class="text">New paper accepted at ABC Conference.</span>
-          </li>
-          <li>
-            <span class="date">2025-01-20</span>
-            <span class="text">Welcome to new group members!</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="openings" class="section">
-      <div class="container">
-        <h2>Open Positions</h2>
-        <p>We are looking for motivated students and researchers. Send your CV and a short statement to
-           <a href="mailto:contact@example.com">contact@example.com</a>.</p>
-        <ul>
-          <li>PhD position in [Area] (start: Fall 2025)</li>
-          <li>Postdoc in [Area] (rolling applications)</li>
-          <li>Undergraduate projects/theses</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <div>
-            <p><strong>Email:</strong> contact@example.com</p>
-            <p><strong>Address:</strong> Department / University, Street 1, City, Country</p>
-            <p><strong>Social:</strong> <a href="#">Scholar</a> • <a href="#">GitHub</a> • <a href="#">Twitter/X</a></p>
-          </div>
-          <form class="contact-form" action="https://formspree.io/f/DEIN_FORM_ID" method="POST">
-            <div class="form-row">
-              <label>Name<input type="text" name="name" required></label>
-              <label>Email<input type="email" name="email" required></label>
-            </div>
-            <label>Message<textarea name="message" rows="5" required></textarea></label>
-            <button type="submit" class="btn primary">Send</button>
-          </form>
-        </div>
-      </div>
-    </section>
+      <ol id="pub-list" class="pub-list"></ol>
+      <p id="pub-empty" class="muted" hidden>No publications found.</p>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Animalphysiologie</p>
       <div class="footer-links">
-        <a href="#" aria-label="Imprint">Imprint</a>
-        <a href="#" aria-label="Privacy">Privacy</a>
+        <a href="#">Imprint</a>
+        <a href="#">Privacy</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
 </body>
 </html>
