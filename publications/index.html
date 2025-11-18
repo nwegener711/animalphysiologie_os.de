@@ -35,26 +35,36 @@
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h1>Publications</h1>
-
-      <div class="pub-controls">
-        <input id="pub-search" type="search" placeholder="Search title, authors, venue..." />
-        <select id="pub-year">
-          <option value="">All years</option>
-        </select>
-        <select id="pub-type">
-          <option value="">All types</option>
-          <option>Journal</option>
-          <option>Conference</option>
-          <option>Preprint</option>
-        </select>
+  <!-- Hero mit Hintergrundbild wie auf der Startseite -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Publications</h1>
+        <p class="sub">Browse our publications and preprints.</p>
       </div>
-
-      <ol id="pub-list" class="pub-list"></ol>
-      <p id="pub-empty" class="muted" hidden>No publications found.</p>
     </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="pub-controls">
+          <input id="pub-search" type="search" placeholder="Search title, authors, venue..." />
+          <select id="pub-year">
+            <option value="">All years</option>
+          </select>
+          <select id="pub-type">
+            <option value="">All types</option>
+            <option>Journal</option>
+            <option>Conference</option>
+            <option>Preprint</option>
+          </select>
+        </div>
+
+        <ol id="pub-list" class="pub-list"></ol>
+        <p id="pub-empty" class="muted" hidden>No publications found.</p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
