@@ -23,5 +23,91 @@
     "year": 2023,
     "type": "Preprint",
     "url": "https://arxiv.org/abs/yyyy"
+  },
+  {
+    "title": "Calcium Dynamics in Drosophila Flight Muscles under Hypoxia",
+    "authors": "I. Nguyen, J. Patel, L. Kramer",
+    "venue": "Journal of Experimental Biology",
+    "year": 2025,
+    "type": "Journal",
+    "url": "https://doi.org/10.5555/jeb.2025.01234",
+    "extra": "Open Data"
+  },
+  {
+    "title": "Real-time Optogenetic Control of Ciliary Beating in Xenopus",
+    "authors": "M. Fischer, A. Rao, K. Bartscherer",
+    "venue": "Nature Communications",
+    "year": 2024,
+    "type": "Journal",
+    "url": "https://doi.org/10.5555/ncomms.2024.04567",
+    "extra": "Code"
+  },
+  {
+    "title": "A Modular Pipeline for Tracking Invertebrate Locomotion",
+    "authors": "R. Chen, P. Duarte, S. Ahmed",
+    "venue": "Methods in Ecology and Evolution",
+    "year": 2024,
+    "type": "Journal",
+    "url": "https://doi.org/10.5555/mee.2024.09876"
+  },
+  {
+    "title": "Bioelectric Patterning Predicts Regenerative Outcomes in Axolotl Limbs",
+    "authors": "T. Silva, H. Kim, L. Romero",
+    "venue": "bioRxiv",
+    "year": 2025,
+    "type": "Preprint",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.01.15.123456v1"
+  },
+  {
+    "title": "High-speed Videography Dataset of Planarian Behavior",
+    "authors": "L. Becker, J. Wang, E. Rossi",
+    "venue": "International Conference on Animal Behavior Data",
+    "year": 2023,
+    "type": "Conference",
+    "url": "https://doi.org/10.5555/abcd.2023.00123",
+    "extra": "Dataset"
+  },
+  {
+    "title": "Quantifying Muscle Fatigue in Teleost Fish Using Ultrasound Imaging",
+    "authors": "C. Mueller, N. Weber, P. Singh",
+    "venue": "Frontiers in Physiology",
+    "year": 2022,
+    "type": "Journal",
+    "url": "https://doi.org/10.5555/frontphys.2022.02468"
+  },
+  {
+    "title": "An Open Hardware Rig for Multi-modal Aquatic Recordings",
+    "authors": "G. Ortega, S. Li, V. Sharma",
+    "venue": "HardwareX",
+    "year": 2021,
+    "type": "Journal",
+    "url": "https://doi.org/10.5555/hwx.2021.00089",
+    "extra": "Open Hardware"
+  },
+  {
+    "title": "Machine-learning Assisted Annotation of C. elegans Posture",
+    "authors": "Y. Park, O. Adeyemi, F. Marino",
+    "venue": "ICML Workshop on Computational Biology",
+    "year": 2020,
+    "type": "Conference",
+    "url": "https://arxiv.org/abs/2006.01234",
+    "extra": "Preprint available"
+  },
+  {
+    "title": "Thermal Tolerance Curves Across Antarctic Crustaceans",
+    "authors": "B. Novak, T. Almeida, R. Schultz",
+    "venue": "Polar Biology",
+    "year": 2019,
+    "type": "Journal",
+    "url": "https://doi.org/10.5555/polbio.2019.00321"
+  },
+  {
+    "title": "A Comparative Atlas of Insect Tracheal Morphogenesis",
+    "authors": "D. Petrova, S. Iqbal, M. Johansson",
+    "venue": "arXiv",
+    "year": 2025,
+    "type": "Preprint",
+    "url": "https://arxiv.org/abs/2502.04567",
+    "extra": "Figures available"
   }
 ]
