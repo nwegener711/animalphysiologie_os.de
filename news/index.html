@@ -1,25 +1,26 @@
+<!-- /news/index.html -->
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>News | Ihre Website</title>
-    <meta name="description" content="Aktuelle Neuigkeiten und Ankündigungen." />
+    <title>News | Animal Physiology</title>
+    <meta name="description" content="Latest announcements and updates." />
     <link rel="canonical" href="https://nwegener711.github.io/animalphysiologie_os.de/news/" />
-    <link rel="stylesheet" href="https://nwegener711.github.io/animalphysiologie_os.de/news/styles.css?v=1" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Direkt zum Inhalt springen</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
       <div class="container">
-        <a class="brand" href="https://nwegener711.github.io/animalphysiologie_os.de/">Ihre Website</a>
-        <nav class="site-nav" aria-label="Hauptnavigation">
+        <a class="brand" href="../">Animal Physiology</a>
+        <nav class="site-nav" aria-label="Main navigation">
           <ul>
-            <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/">Start</a></li>
-            <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/people">Team</a></li>
-            <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/news" aria-current="page" class="active">News</a></li>
-            <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/lectures">Vorlesungen</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../people/">People</a></li>
+            <li><a href="../news/" aria-current="page" class="active">News</a></li>
+            <li><a href="../publications/">Publications</a></li>
           </ul>
         </nav>
       </div>
@@ -28,67 +29,65 @@
     <main id="main" class="container">
       <h1>News</h1>
 
-      <section aria-labelledby="aktuelles">
-        <h2 id="aktuelles" class="sr-only">Aktuelle Meldungen</h2>
+      <section aria-labelledby="latest">
+        <h2 id="latest">Latest updates</h2>
 
-        <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
-          <header>
-            <h3 itemprop="headline">Gastvortrag von Dr. Casey Demo am 12. Januar</h3>
-            <p class="meta">
-              <time datetime="2026-01-12" itemprop="datePublished">12. Januar 2026</time>
-            </p>
-          </header>
-          <p itemprop="description">
-            Wir freuen uns auf einen Vortrag zum Thema Erklärbare KI in der Praxis, gefolgt von einer Q&amp;A-Runde.
-          </p>
-          <p class="more">
-            <a href="https://nwegener711.github.io/animalphysiologie_os.de/news/gastvortrag-casey-demo" itemprop="url">Weiterlesen</a>
-          </p>
-        </article>
+        <!-- same card/grid structure as on /people -->
+        <ul class="people-grid">
+          <li class="person-card">
+            <figure>
+              <img src="../assets/TP_Homepage_Banner.png" alt="Announcement banner" loading="lazy" />
+            </figure>
+            <div class="person-meta">
+              <h3>Guest talk by Dr. Casey Demo on January 12</h3>
+              <p class="meta">12 January 2026</p>
+              <p>Explainable AI in practice, followed by a Q&amp;A session.</p>
+              <p><a class="button" href="./gastvortrag-casey-demo/">Read more</a></p>
+            </div>
+          </li>
 
-        <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
-          <header>
-            <h3 itemprop="headline">Paper auf der Konferenz XYZ akzeptiert</h3>
-            <p class="meta">
-              <time datetime="2025-11-10" itemprop="datePublished">10. November 2025</time>
-            </p>
-          </header>
-          <p itemprop="description">
-            Unser Beitrag zu robuster Wahrnehmung wurde zur Präsentation angenommen. Glückwunsch an das Team!
-          </p>
-          <p class="more">
-            <a href="https://nwegener711.github.io/animalphysiologie_os.de/news/paper-konferenz-xyz" itemprop="url">Zusammenfassung</a>
-          </p>
-        </article>
+          <li class="person-card">
+            <figure>
+              <img src="../assets/Header_TP_Luca.PNG" alt="Conference highlight image" loading="lazy" />
+            </figure>
+            <div class="person-meta">
+              <h3>Paper accepted at conference XYZ</h3>
+              <p class="meta">10 November 2025</p>
+              <p>Our work on robust perception has been accepted. Congrats to the team!</p>
+              <p><a class="button" href="./paper-konferenz-xyz/">Summary</a></p>
+            </div>
+          </li>
 
-        <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
-          <header>
-            <h3 itemprop="headline">Neue Mitarbeiterin: Dr. Sam Muster</h3>
-            <p class="meta">
-              <time datetime="2025-10-01" itemprop="datePublished">1. Oktober 2025</time>
-            </p>
-          </header>
-          <p itemprop="description">
-            Willkommen im Team! Dr. Muster verstärkt uns im Bereich menschzentrierte KI.
-          </p>
-        </article>
+          <li class="person-card">
+            <figure>
+              <img src="../assets/kerstin_normal.webp" alt="Team member portrait placeholder" loading="lazy" />
+            </figure>
+            <div class="person-meta">
+              <h3>New team member: Dr. Sam Muster</h3>
+              <p class="meta">1 October 2025</p>
+              <p>Welcome to the group! Dr. Muster strengthens us in human-centered AI.</p>
+              <p><a class="button" href="./sam-muster-willkommen/">Details</a></p>
+            </div>
+          </li>
+        </ul>
       </section>
 
-      <aside class="news-aside">
-        <h2>Abonnieren</h2>
-        <ul>
-          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/news/rss.xml">RSS-Feed</a></li>
-          <li><a href="https://nwegener711.github.io/animalphysiologie_os.de/newsletter">Newsletter</a></li>
+      <section aria-labelledby="archive">
+        <h2 id="archive">Archive</h2>
+        <ul class="alumni-list">
+          <li><strong>Summer 2025:</strong> Workshop on Human–AI Interaction</li>
+          <li><strong>Spring 2025:</strong> Teaching award for excellent teaching</li>
         </ul>
-      </aside>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; <span id="year"></span> Ihre Website</p>
+        <p>&copy; <span id="year"></span> Animal Physiology</p>
       </div>
     </footer>
 
+    <script src="./script.js" defer></script>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
