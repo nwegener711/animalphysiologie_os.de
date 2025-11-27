@@ -222,3 +222,12 @@ a:active { color: #ffffff; }
   display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
 }
 .image-banner h2{ color:#fff; margin:0; }
+
+/* Hatte Research bereits so einen Hintergrund? Dann einfach für Contact übernehmen */
+#contact {
+  background: linear-gradient(180deg, rgba(34,197,94,.06), rgba(34,197,94,0)), var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
