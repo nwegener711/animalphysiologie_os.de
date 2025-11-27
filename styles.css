@@ -228,4 +228,8 @@ a:active { color: #ffffff; }
   background: var(--bg-alt);
 }
 
+#publications:empty,
+#publications .container:empty {
+display: none;
+}
 
