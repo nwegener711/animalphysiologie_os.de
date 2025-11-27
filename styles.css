@@ -223,8 +223,4 @@ a:active { color: #ffffff; }
 }
 .image-banner h2{ color:#fff; margin:0; }
 
-/* Contact gleich wie Research Outlook (.section.alt) */
-#contact { 
-  background: var(--bg-alt);
-}
 
