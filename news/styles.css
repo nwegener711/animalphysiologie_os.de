@@ -222,3 +222,11 @@ a:active { color: #ffffff; }
   display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
 }
 .image-banner h2{ color:#fff; margin:0; }
+
+
+/* /news/styles.css */
+/* Reuse the exact look from /people (hero with background image, cards, grid) */
+@import url("../people/styles.css");
+
+/* Optional: tiny news-specific tweak */
+.person-card .meta { opacity: 0.95; }
