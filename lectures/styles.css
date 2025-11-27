@@ -1,1 +1,224 @@
+:root{
+  --bg:#ffffff;
+  --bg-alt:#f6f8fb;
+  --text:#101828;
+  --muted:#667085;
+  --primary:#0b72ff;
+  --primary-600:#085bd1;
+  --border:#e4e7ec;
+  --card:#ffffff;
+  --container:1100px;
+  --radius:12px;
+  --shadow:0 1px 2px rgba(16,24,40,.05), 0 4px 12px rgba(16,24,40,.06);
+}
 
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: "Times New Roman", Times, Georgia, serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+
+img{max-width:100%;display:block;border-radius:8px}
+.container{width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
+
+.site-header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(255,255,255,.8);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{color:var(--text);text-decoration:none;font-weight:700;font-size:1.05rem}
+
+.nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+.nav a{color:var(--muted);text-decoration:none;font-weight:600}
+.nav a:hover{color:var(--text)}
+.nav-toggle{display:none;background:transparent;border:0;cursor:pointer}
+.nav-toggle .bar{display:block;width:22px;height:2px;background:#111;margin:4px 0;border-radius:2px}
+
+.hero{padding:72px 0 48px;background:linear-gradient(180deg,#f7faff,transparent)}
+.hero-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.hero h1{font-size:2.6rem;line-height:1.2;margin:0 0 10px}
+.hero .sub{color:var(--muted);margin:0 0 20px}
+.cta-row{display:flex;gap:12px}
+
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--border);text-decoration:none;font-weight:700}
+.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
+.btn.primary:hover{background:var(--primary-600)}
+.btn.ghost{color:var(--text);background:transparent}
+.btn.ghost:hover{border-color:var(--text)}
+
+.section{padding:64px 0}
+.section.alt{background:var(--bg-alt)}
+
+.grid-3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.card h3{margin-top:0}
+
+.pub-controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.pub-controls input,.pub-controls select{padding:10px 12px;border:1px solid var(--border);border-radius:10px;min-width:200px}
+
+.pub-list{padding-left:20px}
+.pub-list li{margin-bottom:14px}
+.pub-item-title{font-weight:600}
+.muted{color:var(--muted)}
+
+.people .pi{display:grid;grid-template-columns:120px 1fr;gap:16px;margin-bottom:24px;align-items:center}
+.person img{width:100%;height:auto}
+
+.news-list{list-style:none;margin:0;padding:0}
+.news-list li{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--border)}
+.news-list .date{color:var(--muted);font-feature-settings:"tnum" 1, "lnum" 1}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contact-form{display:grid;gap:12px}
+.form-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+input,textarea{width:100%;background:#fff;color:var(--text);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+input:focus,textarea:focus{outline:2px solid var(--primary);border-color:transparent}
+
+.site-footer{border-top:1px solid var(--border);padding:24px 0;margin-top:24px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between}
+.footer-links a{color:var(--muted);text-decoration:none;margin-left:14px}
+.footer-links a:hover{color:var(--text)}
+
+@media (max-width: 900px){
+  .hero-inner{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+  .nav-toggle{display:block}
+  .nav{display:none;position:absolute;top:64px;right:0;left:0;background:#fff;border-bottom:1px solid var(--border)}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column;padding:12px}
+  .form-row{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .people .pi{grid-template-columns:80px 1fr}
+}
+/* Großes Hintergrundbild im Hero */
+.hero {
+  position: relative;
+  min-height: 80vh;              /* Höhe des Bereichs */
+  padding: 120px 0 80px;         /* Platz für Text oben/unten */
+  background: url("assets/hintergrund.png") center/cover no-repeat;
+}
+
+/* Overlay für bessere Lesbarkeit */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55));
+}
+
+/* Inhalt über dem Overlay */
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Text im Hero auf hell stellen */
+.hero h1 { color: #fff; }
+.hero .sub { color: rgba(255,255,255,.9); }
+
+/* Buttons im Hero an das dunkle Overlay anpassen */
+.hero .btn.ghost { color: #fff; border-color: rgba(255,255,255,.6); }
+.hero .btn.ghost:hover { border-color: #fff; }
+
+/* Falls rechts noch ein Bild steht, ausblenden */
+.hero-media { display: none; }
+
+@media (min-width: 900px) {
+  /* Optional: leichter Parallax-Effekt */
+  .hero { background-attachment: fixed; }
+}
+
+/* Überschriften auf Times stellen */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, Georgia, serif !important;
+}
+
+/* Größere, responsive Überschriften */
+h1 {
+  font-size: clamp(2.4rem, 3.8vw + 0.5rem, 3.8rem);
+  line-height: 1.15;
+}
+h2 {
+  font-size: clamp(1.9rem, 2.2vw + 0.4rem, 2.6rem);
+  line-height: 1.2;
+}
+h3 {
+  font-size: clamp(1.5rem, 1.2vw + 0.3rem, 2rem);
+  line-height: 1.25;
+}
+
+/* Hero-Überschrift extra groß */
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 4.8rem);
+}
+
+/* Dark Theme – Variablen überschreiben */
+:root{
+  --bg:#0f1221;
+  --bg-alt:#141833;
+  --text:#e8ebf7;
+  --muted:#b9bed3;
+  --primary:#6c8cff;
+  --primary-600:#5a75d6;
+  --card:#1a1f3f;
+  --border:#2a2f56;
+}
+
+/* Header/Mobilmenü auf dunkel */
+.site-header{
+  background:rgba(10,13,26,0.6);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border);
+}
+.nav-toggle .bar{ background: var(--text); }
+
+/* Mobiles Dropdown-Menü dunkel (wichtig, überschreibt #fff) */
+@media (max-width: 720px){
+  .nav{ background: rgba(10,13,26,0.98); border-bottom:1px solid var(--border); }
+}
+
+/* Inputs/Formulare dunkel */
+input, textarea{
+  background:#0f1230;
+  color:var(--text);
+  border:1px solid var(--border);
+}
+
+/* Karten/Buttons passen sich durch Variablen bereits an */
+
+/* Hellere Links auf dunklem Hintergrund */
+a { color: #cfe0ff; text-decoration-color: rgba(207,224,255,.5); }
+a:hover, a:focus { color: #ffffff; text-decoration-color: #ffffff; }
+a:visited { color: #cfe0ff; } /* verhindert lila */
+a:active { color: #ffffff; }
+
+/* Navi/Footer ggf. explizit */
+.nav a, .footer-links a { color: #cfe0ff; }
+.nav a:hover, .footer-links a:hover { color: #fff; }
+
+/* Bildbanner mit 1304x522-Ratio */
+.image-banner{
+  position: relative;
+  aspect-ratio: 1304 / 522;            /* hält das Seitenverhältnis */
+  background: url("assets/Header_TP_Luca.PNG") center/cover no-repeat;
+  margin: 0;
+}
+
+/* Optional: Overlay entfernen/abschwächen oder belassen */
+.image-banner::before{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.3)); /* anpassen/entfernen */
+}
+
+/* Optional: Caption/Text im Banner */
+.image-banner .banner-inner{
+  position: relative; z-index: 1; height: 100%;
+  display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
+}
+.image-banner h2{ color:#fff; margin:0; }
