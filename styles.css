@@ -222,47 +222,6 @@ a:active { color: #ffffff; }
   display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
 }
 .image-banner h2{ color:#fff; margin:0; }
-
-
-/* Verhindert, dass Überschriften/Abschnitte hinter dem sticky Header verschwinden */
-section, [id] {
-  scroll-margin-top: 80px;
-}
-
-/* iOS-Safe-Area beachten (Notch) und ausreichend Abstand nach oben im Hero */
-@supports (padding: max(0px)) {
-  .hero {
-    padding-top: max(96px, calc(64px + env(safe-area-inset-top)));
-  }
-}
-
-/* Mobile-Fixes: kleinere Hero-Überschrift, adaptiver Hero, Bild-Position nach oben */
-@media (max-width: 720px){
-  .hero{
-    padding: 96px 0 40px;
-    min-height: auto;                /* verhindert erzwungene Höhe, die Text "abschneidet" */
-    background-position: center top; /* zeigt den oberen Bildbereich, statt mittig zu croppen */
-  }
-  .hero h1{
-    /* vorher min 3rem -> zu groß auf kleinen Screens */
-    font-size: clamp(1.8rem, 8.5vw, 2.6rem);
-    line-height: 1.15;
-    word-break: break-word;
-    hyphens: auto;
-  }
-  .hero .sub{ font-size: 1rem; }
-  .hero-inner{ gap: 16px; }
-
-  /* Image-Banner: Höhe nicht strikt über aspect-ratio erzwingen */
-  .image-banner{
-    aspect-ratio: auto;      /* löst die feste 1304/522-Höhe auf kleinen Screens */
-    min-height: 42vh;        /* gibt dem Banner genug Raum */
-    background-position: center top;
-  }
-  .image-banner .banner-inner{
-    align-items: flex-end;   /* Text ans untere Drittel, wirkt harmonischer */
-    padding: 24px 16px;
-  }
 }
 
 
