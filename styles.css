@@ -224,6 +224,41 @@ a:active { color: #ffffff; }
 .image-banner h2{ color:#fff; margin:0; }
 }
 
+/* Inhalt nicht vom Sticky-Header überdecken */
+.site-header + main{
+  padding-top: 64px;
+}
+[id]{
+  scroll-margin-top: 64px;
+}
+
+/* Mobile-Fixes für den Hero (überschreibt deine 80vh + große H1) */
+@media (max-width: 720px){
+  #home .hero{
+    min-height: auto !important;                 /* 80vh aufheben */
+    padding: 96px 0 40px !important;             /* genug Platz für H1 */
+    background-position: top center !important;  /* Bildfokus oben */
+    background-size: cover;
+  }
+
+  /* H1 deutlich kleiner machen und sauber umbrechen */
+  #home .hero .hero-text h1{
+    font-size: clamp(1.8rem, 7vw, 2.4rem) !important;
+    line-height: 1.15 !important;
+    margin: 0 0 12px !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Subline und Buttons leicht kompakter */
+  #home .hero .sub{ font-size: 1rem !important; }
+  #home .hero .cta-row{ gap: 10px; flex-wrap: wrap; }
+  #home .hero .btn{ padding: 10px 14px; }
+}
+
+/* Optional: horizontales Scrollen verhindern, falls etwas übersteht */
+html, body{ overflow-x: hidden; }
+
 
 
 
