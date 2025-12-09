@@ -225,3 +225,62 @@ a:active { color: #ffffff; }
 }
 
 
+
+/* Fix: Überschrift/Bild nicht vom Sticky-Header überdecken */
+#home .hero {
+  padding-top: calc(120px + env(safe-area-inset-top, 0px));
+}
+
+/* Falls der Header höher ist, hier anpassen (Standard: 64px) */
+#home, #home .hero {
+  scroll-margin-top: calc(64px + env(safe-area-inset-top, 0px));
+}
+
+/* Sicherstellen, dass das rechte Bild nicht versteckt ist */
+.hero-media { display: block; }
+
+/* Bild niemals abgeschnitten darstellen */
+.hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile-Optimierungen */
+@media (max-width: 900px){
+  /* Einspaltiges Layout ist bei dir schon aktiv, hier nur Abstände */
+  .hero .hero-inner { gap: 16px; }
+}
+
+@media (max-width: 720px){
+  /* Kein starres 80vh auf kleinen Screens -> verhindert Abschneiden */
+  .hero{
+    min-height: auto !important;
+    padding-top: calc(96px + env(safe-area-inset-top, 0px)) !important;
+    padding-bottom: 40px !important;
+    background-position: top center !important; /* zeigt oberen Bildbereich */
+    background-size: cover;
+  }
+
+  /* Lange Überschrift sauber umbrechen und etwas kleiner */
+  .hero-text h1{
+    font-size: clamp(1.8rem, 7.2vw, 2.4rem);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Bild unter dem Text vollständig anzeigen */
+  .hero-media img{
+    object-fit: contain;
+  }
+}
+
+/* OPTIONAL: Wenn der Sticky-Header dein <main> überlappt (DOM kann variieren),
+   ergänze zusätzlich eine Top-Polsterung für das gesamte Main */
+main#home{
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
