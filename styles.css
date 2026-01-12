@@ -259,5 +259,9 @@ a:active { color: #ffffff; }
 /* Optional: horizontales Scrollen verhindern, falls etwas übersteht */
 html, body{ overflow-x: hidden; }
 
+.nav a {
+    font-size: 20px !important;
+    color: white !important;
+}
 
 
