@@ -259,3 +259,40 @@ a:active { color: #ffffff; }
 /* Optional: horizontales Scrollen verhindern, falls etwas übersteht */
 html, body{ overflow-x: hidden; }
 
+
+
+
+
+
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:64px;
+}
+
+/* Titel links oben */
+.logo{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.4rem;        /* vorher 1.05rem */
+}
+
+/* Menü-Punkte rechts (Research, Publications, …) */
+.nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.05rem;       /* hier Größe einstellen, z.B. 1.05–1.2rem */
+}
+
