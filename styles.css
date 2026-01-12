@@ -120,7 +120,7 @@ input:focus,textarea:focus{outline:2px solid var(--primary);border-color:transpa
 /* Text im Hero auf hell stellen */
 .hero h1 { color: #fff; }
 .hero .sub { color: rgba(255,255,255,.9); }
- font-size: 1.2rem; }
+ font-size: 1.8rem; }
 
 /* Buttons im Hero an das dunkle Overlay anpassen */
 .hero .btn.ghost { color: #fff; border-color: rgba(255,255,255,.6); }
