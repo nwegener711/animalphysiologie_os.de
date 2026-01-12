@@ -269,3 +269,7 @@ html, body{ overflow-x: hidden; }
     color: white !important;
 }
 
+.hero .sub {
+    font-size: 19px !important;
+    color: white !important;
+}
