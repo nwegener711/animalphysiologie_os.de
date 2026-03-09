@@ -12,12 +12,15 @@
   --shadow:0 1px 2px rgba(16,24,40,.05), 0 4px 12px rgba(16,24,40,.06);
 }
 
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
 body{
-  font-family: "Avenir Black", "Avenir-Black", Avenir, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+  font-family: "Times New Roman", Times, Georgia, serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
 }
+
 
 img{max-width:100%;display:block;border-radius:8px}
 .container{width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
