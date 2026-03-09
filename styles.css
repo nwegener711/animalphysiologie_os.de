@@ -272,9 +272,3 @@ html, body{ overflow-x: hidden; }
 .hero .sub {
     color: white !important;
 }
-
-/* TEST: Lücke unter Header killen */
-.hero{
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
