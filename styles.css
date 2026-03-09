@@ -232,14 +232,6 @@ a:active { color: #ffffff; }
   scroll-margin-top: 64px;
 }
 
-/* Mobile-Fixes für den Hero (überschreibt deine 80vh + große H1) */
-@media (max-width: 720px){
-  #home .hero{
-    min-height: auto !important;                 /* 80vh aufheben */
-    padding: 96px 0 40px !important;             /* genug Platz für H1 */
-    background-position: top center !important;  /* Bildfokus oben */
-    background-size: cover;
-  }
 
   /* H1 deutlich kleiner machen und sauber umbrechen */
   #home .hero .hero-text h1{
