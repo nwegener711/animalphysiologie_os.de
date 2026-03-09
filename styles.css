@@ -262,7 +262,6 @@ html, body{ overflow-x: hidden; }
 .nav a {
     font-size: 19px !important;
     color: white !important;
-    font-family: "Avenir-Black";
 }
 
 .site-header .logo {
