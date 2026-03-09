@@ -272,3 +272,6 @@ html, body{ overflow-x: hidden; }
 .hero .sub {
     color: white !important;
 }
+
+.hero { padding-top: 0; }
+}
