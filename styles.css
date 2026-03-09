@@ -45,7 +45,6 @@ img{max-width:100%;display:block;border-radius:8px}
 .cta-row{display:flex;gap:12px}
 
 .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--border);text-decoration:none;font-weight:700}
-.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
 .btn.primary:hover{background:var(--primary-600)}
 .btn.ghost{color:var(--text);background:transparent}
 .btn.ghost:hover{border-color:var(--text)}
