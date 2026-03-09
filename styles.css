@@ -15,7 +15,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  font-family: "Avenir-Black", Times, Georgia, serif;
+  font-family: "Times New Roman", Times, Georgia, serif;
 background: var(--bg);
 color: var(--text);
 line-height: 1.6;
