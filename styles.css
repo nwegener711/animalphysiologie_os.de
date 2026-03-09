@@ -272,26 +272,3 @@ html, body{ overflow-x: hidden; }
 .hero .sub {
     color: white !important;
 }
-
-.hero{
-  position: relative;
-  min-height: 80vh;
-  padding: 24px 0 80px;
-  background: url("assets/hintergrund.png") center/cover no-repeat;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55));
-}
-
-.hero-inner{
-  position: relative;
-  z-index: 1;
-  display:grid;
-  grid-template-columns:1.2fr 1fr;
-  gap:32px;
-  align-items:center;
-}
