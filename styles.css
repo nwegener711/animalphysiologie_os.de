@@ -39,7 +39,6 @@ img{max-width:100%;display:block;border-radius:8px}
 .nav-toggle .bar{display:block;width:22px;height:2px;background:#111;margin:4px 0;border-radius:2px}
 
 .hero{padding:72px 0 48px;background:linear-gradient(180deg,#f7faff,transparent)}
-.hero { padding-top: 0; }
 .hero-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
 .hero h1{font-size:2.6rem;line-height:1.2;margin:0 0 10px}
 .hero .sub{color:var(--muted);margin:0 0 20px}
