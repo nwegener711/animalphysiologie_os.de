@@ -99,8 +99,9 @@ input:focus,textarea:focus{outline:2px solid var(--primary);border-color:transpa
 .hero {
   position: relative;
   min-height: 80vh;              /* Höhe des Bereichs */
-  padding: 0px 0 80px;         /* Platz für Text oben/unten */
+  padding: 120px 0 80px;         /* Platz für Text oben/unten */
   background: url("assets/hintergrund.png") center/cover no-repeat;
+  { padding-top: 0; }
 }
 
 /* Overlay für bessere Lesbarkeit */
