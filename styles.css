@@ -157,16 +157,17 @@ h3 {
   font-size: clamp(3rem, 6vw, 4.8rem);
 }
 
-/* Dark Theme – Variablen überschreiben */
+/* Dark Theme – Variablen überschreiben (Blau -> Schwarz/Grau) */
 :root{
-  --bg:#0f1221;
-  --bg-alt:#141833;
-  --text:#e8ebf7;
-  --muted:#b9bed3;
-  --primary:#6c8cff;
-  --primary-600:#5a75d6;
-  --card:#1a1f3f;
-  --border:#2a2f56;
+  --bg:#0b0b0c;         /* fast schwarz */
+  --bg-alt:#111113;     /* schwarz/grau */
+  --text:#f2f2f2;       /* helles grau (statt blauweiß) */
+  --muted:#b5b5b8;      /* neutrales muted-grau */
+  --primary:#e6e6e6;    /* neutraler "Accent" (hellgrau) */
+  --primary-600:#bdbdbd;/* dunkleres grau */
+  --card:#151517;       /* dunkles grau */
+  --border:#2a2a2e;     /* grauer Rahmen */
+}
 
 
 /* Header/Mobilmenü auf dunkel */
