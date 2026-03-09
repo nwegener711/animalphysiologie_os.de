@@ -184,7 +184,7 @@ h3 {
 
 /* Inputs/Formulare dunkel */
 input, textarea{
-  background:#c0c0c0;
+  background:#f2f2f2;
   color:var(--text);
   border:1px solid var(--border);
 }
