@@ -5,7 +5,7 @@
     "venue": "Journal Name",
     "year": 2025,
     "type": "Journal",
-    "url": "https://doi.org/xxxx",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Open Access"
   },
   {
@@ -14,7 +14,7 @@
     "venue": "Conference XYZ",
     "year": 2024,
     "type": "Conference",
-    "url": "https://arxiv.org/abs/xxxx"
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract"
   },
   {
     "title": "Preprint 3",
@@ -22,7 +22,7 @@
     "venue": "arXiv",
     "year": 2023,
     "type": "Preprint",
-    "url": "https://arxiv.org/abs/yyyy"
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract"
   },
   {
     "title": "Calcium Dynamics in Drosophila Flight Muscles under Hypoxia",
@@ -30,7 +30,7 @@
     "venue": "Journal of Experimental Biology",
     "year": 2025,
     "type": "Journal",
-    "url": "https://doi.org/10.5555/jeb.2025.01234",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Open Data"
   },
   {
@@ -39,7 +39,7 @@
     "venue": "Nature Communications",
     "year": 2024,
     "type": "Journal",
-    "url": "https://doi.org/10.5555/ncomms.2024.04567",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Code"
   },
   {
@@ -48,7 +48,7 @@
     "venue": "Methods in Ecology and Evolution",
     "year": 2024,
     "type": "Journal",
-    "url": "https://doi.org/10.5555/mee.2024.09876"
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract"
   },
   {
     "title": "Bioelectric Patterning Predicts Regenerative Outcomes in Axolotl Limbs",
@@ -56,7 +56,7 @@
     "venue": "bioRxiv",
     "year": 2025,
     "type": "Preprint",
-    "url": "https://www.biorxiv.org/content/10.1101/2025.01.15.123456v1"
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract"
   },
   {
     "title": "High-speed Videography Dataset of Planarian Behavior",
@@ -64,7 +64,7 @@
     "venue": "International Conference on Animal Behavior Data",
     "year": 2023,
     "type": "Conference",
-    "url": "https://doi.org/10.5555/abcd.2023.00123",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Dataset"
   },
   {
@@ -73,7 +73,7 @@
     "venue": "Frontiers in Physiology",
     "year": 2022,
     "type": "Journal",
-    "url": "https://doi.org/10.5555/frontphys.2022.02468"
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract"
   },
   {
     "title": "An Open Hardware Rig for Multi-modal Aquatic Recordings",
@@ -81,7 +81,7 @@
     "venue": "HardwareX",
     "year": 2021,
     "type": "Journal",
-    "url": "https://doi.org/10.5555/hwx.2021.00089",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Open Hardware"
   },
   {
@@ -90,7 +90,7 @@
     "venue": "ICML Workshop on Computational Biology",
     "year": 2020,
     "type": "Conference",
-    "url": "https://arxiv.org/abs/2006.01234",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Preprint available"
   },
   {
@@ -99,7 +99,7 @@
     "venue": "Polar Biology",
     "year": 2019,
     "type": "Journal",
-    "url": "https://doi.org/10.5555/polbio.2019.00321"
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract"
   },
   {
     "title": "A Comparative Atlas of Insect Tracheal Morphogenesis",
@@ -107,7 +107,7 @@
     "venue": "arXiv",
     "year": 2025,
     "type": "Preprint",
-    "url": "https://arxiv.org/abs/2502.04567",
+    "url": "https://genome.cshlp.org/content/early/2023/09/19/gr.277538.122.abstract",
     "extra": "Figures available"
   }
 ]
